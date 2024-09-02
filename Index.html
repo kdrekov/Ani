@@ -32,9 +32,7 @@
             height: 40px;
         }
 	    .audio-player {
-            position: absolute;
-            top: 150px; /* Позиционира плейъра на 20px от горната част на екрана */
-            left: 20px; /* Позиционира плейъра на 20px от лявата част на екрана */
+           display: none; /* Скрива аудио плейъра */
         }
 	    /* Отзивчивост за мобилни устройства */
         @media (max-width: 768px) {
@@ -64,7 +62,7 @@
 </div>
 
 <div class="audio-player">
-    <audio controls>
+    <audio autoplay loop>
         <source src="Brindo Con Agua - Aventura.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
