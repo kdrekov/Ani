@@ -32,7 +32,12 @@
             height: 40px;
         }
 	    .audio-player {
-           display: none; /* Скрива аудио плейъра */
+           width: 1px;
+    height: 1px;
+    opacity: 0; /* Прави плейъра невидим, но активен */
+    position: absolute;
+    top: 0;
+    left: 0;
         }
 	    /* Отзивчивост за мобилни устройства */
         @media (max-width: 768px) {
