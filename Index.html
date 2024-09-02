@@ -72,6 +72,11 @@
         Your browser does not support the audio element.
     </audio>
 </div>
-
+<script>
+    window.addEventListener('load', function() {
+        var audio = document.querySelector('audio');
+        audio.play();
+    });
+</script>
 </body>
 </html>
