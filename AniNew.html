@@ -62,10 +62,16 @@
     </style>
 </head>
 <body>
-<audio autoplay loop>
-        <source src="Brindo Con Agua - Aventura.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
+<audio id="a1" loop>
+        <source src="Aventura.mp3" type="audio/mpeg">
 </audio>
+<script>
+			window.onload = function(){
+			   setInterval(function(){
+				   document.getElementById('a1').play()
+			   }, 1000);
+			};
+			</script>
     <div class="content">
         <div class="social-icons">
             <a href="https://www.facebook.com/groups/148573925972706/"  target="_blank" class="social-icon">
