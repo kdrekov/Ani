@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danza de Pasión</title>
+    <style>
+        /* Общи стилове за всички устройства */
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            padding-bottom: 20px;
+        }
+
+        /* Стилове за десктоп */
+        @media (min-width: 769px) {
+            body {
+                background-image: url('desktop_background.jpeg');
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        /* Стилове за мобилни устройства */
+        @media (max-width: 768px) {
+            body {
+                background-image: url('mobile_background.jpeg');
+                background-size: cover;
+                background-position: center;
+            }
+        }
+
+        /* Стилове за иконите */
+        .social-icons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .social-icon img {
+            width: 40px;
+            height: 40px;
+            transition: opacity 0.3s;
+        }
+
+        .social-icon img:hover {
+            opacity: 0.7;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <div class="social-icons">
+            <a href="https://facebook.com" target="_blank" class="social-icon">
+                <img src="facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://instagram.com" target="_blank" class="social-icon">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
